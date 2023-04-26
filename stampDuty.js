@@ -1,13 +1,7 @@
 function stampDuty(housePrice) {
   if (housePrice < 250001) {
     return "£0.00";
-  } else if (housePrice < 925001) {
-    const duty = (housePrice - 250000) * 0.05;
-    return "£" + duty.toFixed(2);
-  } else if (housePrice < 1500001) {
-    const duty = (housePrice - 925000) * 0.1;
-    return "£" + (duty + 33750.05).toFixed(2);
-  }
+  } 
 }
 
 module.exports = stampDuty;
